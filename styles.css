@@ -1,0 +1,106 @@
+body {/*Toda la web*/
+    font: 15px "verdana", sans-serif;
+    color: #FFF;
+    text-shadow: 0px 0px 5px #000;
+    background: rgb(150, 150, 150);
+    /*background-image: linear-gradient(90deg, rgb(150, 150, 150), rgb(255, 150, 80), rgb(150, 150, 150));*/
+    background-image: url("./imagenes/tileableBackground.jpg");
+}
+
+.contenido {/*Margen al contenido sin contar menú ni pié*/
+    margin: 50px;
+}
+
+a, a:visited {/*Enlaces y enlaces visitados*/
+    color: #FFF;
+    text-shadow: 0px 0px 5px #000;
+    text-decoration: underline;
+}
+
+a:hover {/*Cursor encima de enlace*/
+    color: #FFF;
+    text-shadow: 0px 0px 5px #000;
+    text-decoration: blink;
+}
+
+a.entrada {
+    text-decoration: none;
+}
+
+nav ul {/*Lista dentro de nav*/
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(150, 150, 150) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul li {/*Elementos de la lista*/
+    float: left;
+    border-right: 1px solid #bbb;
+    background-image: linear-gradient(rgb(0, 0, 0) 0%, rgb(150, 150, 150) 100%);
+}
+
+nav ul li a {/*Enlaces de la lista*/
+    display: block;
+    color: #FFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {/*Cursor encima de los enlaces de la lista*/
+    background-image: linear-gradient(rgb(150, 150, 150) 0%, rgb(0, 0, 0) 100%);
+    color: #FFF;
+    text-decoration: none;
+}
+
+nav ul li:last-child {/*Ultimo elemento de la lista*/
+    border-right: none;
+    float: right;
+}
+
+ul {/*Listas en general*/
+    list-style-type: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+img {/*Imagenes*/
+    width: 100%;
+    height: 100%;
+    padding: 0.5em;
+}
+
+img:hover {/*Cursor encima de imagen*/
+    padding: 10px;
+}
+
+.col-sm-12 {/*Clase de bootstrap*/
+    text-align: center;
+}
+footer {/*Pie*/
+    background-color: #C5C5C5;
+    color: #F8F8F8;
+    padding: 0.5em;
+    text-align: right;
+    text-shadow: 3px 2px 2px black;
+    position: fixed;
+    bottom: 0px;
+    width: 96%;
+}
+
+footer a{/*Enlaces dentro del pie*/
+    float: left;
+}
+
+input,textarea {
+    color: #000;
+}
